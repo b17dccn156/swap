@@ -28,9 +28,8 @@ int main() {
 	//Sap xep neu 2 phan tu co gia tri tuyet doi bang nhau, so duong truoc, so am sau, dong thoi in ra stdout.
 	for (int i = 0; i < n-1; i ++) {
 		if ((abs(Array[i]) == abs(Array[i+1])) && (Array[i] < 0)) {
-			temp = Array[i];
-			Array[i] = Array[i+1];
-			Array[i+1] = temp;			
+			Array[i] *= -1;
+			Array[i+1] *= -1;			
 		}
 		OutFile << Array[i] <<" ";
 	}
